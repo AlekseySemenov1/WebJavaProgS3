@@ -1,0 +1,91 @@
+.textLabel {
+    color: #4522ff;
+    font-family: monospace;
+    font-size: large;
+}
+
+.checkboxLabel {
+    color: #ff4438;
+    font-size: large;
+    padding: 5%;
+    alignment: left;
+}
+
+.askPart {
+    padding: 10%;
+    padding-bottom: 5%;
+    padding-top: 5%;
+    background-color: aquamarine;
+    width: 50%;
+}
+
+.headPart{
+    background-color: khaki;
+    font-family: monospace;
+    font-size: large;
+}
+
+input#Submit{
+    width: 70%;
+    background-color: #ff6b5b;
+    margin-left: 0%;
+    margin-right: 0%;
+}
+
+input#Reset{
+    width: 70%;
+    background-color: #40cfff;
+    margin-left: 0%;
+    margin-right: 0%;
+}
+
+td > table{
+    border: 1px solid black;
+    width: 80%;
+    margin: 10%;
+}
+
+.XCoordinateTable, .RadTable{
+    margin-top: 0%;
+    margin-bottom: 10%;
+    border: 2px solid black;
+    border-collapse: collapse;
+    width: 80%;
+}
+
+.XCoordinateTable td, .RadTable td {
+    border: 2px solid black;
+    text-align: center;
+}
+
+table#mainTable{
+    width: 100%;
+    border: hidden;
+}
+
+table#formButtons{
+    width: 80%;
+    border: hidden;
+}
+
+#Ycoordinate:focus{
+    background-color: aqua;
+}
+
+.answerTable{
+    background-color: cyan;
+    width: 100%;
+    border-spacing: 0;
+}
+
+.answerTable td{
+    border: 2px solid black;
+    text-align: center;
+    width: 16%;
+}
+
+.YCoordinateTable{
+    border: 0px;
+    width: 80%;
+    margin: 0%;
+}
