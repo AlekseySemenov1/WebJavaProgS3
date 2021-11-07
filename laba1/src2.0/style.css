@@ -1,0 +1,108 @@
+body{
+    background-color: rgba(78,135,226,1);
+    min-width: 1500px;
+}
+
+#bodyTable{
+    width: 70%;
+    border: 3px solid black;
+    margin-left: 15%;
+    margin-right: 15%;
+    border-collapse: collapse;
+}
+
+th{
+    background-color: indigo;
+    font-family: monospace;
+    font-size: 25px;
+    color: white;
+    text-shadow: 1mm 1mm 2mm black;
+}
+
+#imgRow{
+    background-color: white;
+}
+
+#coordinatePicture{
+    margin-right: 37%;
+    margin-left: 37%;
+    width: 25%;
+}
+
+.askPart {
+    width: 50%;
+    align-content: center;
+}
+
+.XCoordinateTable{
+    margin: 0% 10% 10%;
+    border: 2px solid black;
+    border-collapse: collapse;
+    width: 80%;
+}
+
+.RadTable{
+    margin: 0% 10% 10%;
+    border: 2px solid black;
+    border-collapse: collapse;
+    width: 80%;
+}
+
+.YCoordinateTable{
+    box-sizing: border-box;
+    margin: 0% 30% 0%;
+    border: 2px solid black;
+    border-collapse: collapse;
+    width: 30%;
+}
+
+.XCoordinateTable td, .RadTable td {
+    height: 50px;
+    border: 2px solid black;
+    text-align: center;
+}
+
+.textLabel {
+    color: #30ff6e;
+    font-family: monospace;
+    font-size: large;
+}
+
+.YCoordinateTable th{
+    height: 20px;
+}
+
+div{
+    padding: 5%;
+    text-align: center;
+}
+
+table#formButtons{
+    margin: 0% 25%;
+    width: 50%;
+    border: hidden;
+}
+input#Submit{
+    width: 70%;
+    background-color: #ff6b5b;
+    margin-left: 0%;
+    margin-right: 0%;
+}
+
+input#Reset{
+    width: 70%;
+    background-color: #40cfff;
+    margin-left: 0%;
+    margin-right: 0%;
+}
+
+.checkboxLabel {
+    color: firebrick;
+    font-size: 20px;
+    padding: 5%;
+    alignment: left;
+}
+
+input[type="text"]:focus{
+    background-color: aqua;
+}

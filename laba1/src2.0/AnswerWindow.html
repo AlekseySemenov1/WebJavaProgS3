@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<script src="script.js"></script>
+<table id="bodyTable">
+    <tr>
+        <th colspan="2">
+            Семенов Алексей Олегович P3214
+            Вариант 14204
+        </th>
+    </tr>
+    <tr id="imgRow">
+        <td colspan="2">
+            <img src="../src/qwerty.png" id="coordinatePicture">
+        </td>
+    </tr>
+    <form method="post" action="script.php">
+        <tr>
+            <td colspan="1" class="askPart">
+                <div>
+                    <label id="XMessage" style="visibility: hidden;" class="textLabel">something</label>
+                </div>
+                <table class="XCoordinateTable">
+                    <tr>
+                        <th colspan="3">
+                            <label class="textLabel" >Coordinate X</label>
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="checkbox1" class="checkboxLabel">-4</label>
+                            <input type="checkbox" class="Xcheckbox" id="checkbox1" name="x1" value="-4" checked
+                                   onclick="XInput()">
+                        </td>
+                        <td>
+                            <label for="checkbox2" class="checkboxLabel">-3</label>
+                            <input type="checkbox" class="Xcheckbox" id="checkbox2" name="x2" value="-3"
+                                   onclick="XInput()">
+                        </td>
+                        <td>
+                            <label for="checkbox3" class="checkboxLabel">-2</label>
+                            <input type="checkbox" class="Xcheckbox" id="checkbox3" name="x3" value="-2"
+                                   onclick="XInput()">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="checkbox4" class="checkboxLabel">-1</label>
+                            <input type="checkbox" class="Xcheckbox" id="checkbox4" name="x4" value="-1"
+                                   onclick="XInput()">
+                        </td>
+                        <td><label for="checkbox5" class="checkboxLabel">0</label>
+                            <input type="checkbox" class="Xcheckbox" id="checkbox5" name="x5" value="0"
+                                   onclick="XInput()">
+                        </td>
+                        <td>
+                            <label for="checkbox6" class="checkboxLabel">1</label>
+                            <input type="checkbox" class="Xcheckbox" id="checkbox6" name="x6" value="1"
+                                   onclick="XInput()">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="checkbox7" class="checkboxLabel">2</label>
+                            <input type="checkbox" class="Xcheckbox" id="checkbox7" name="x7" value="2"
+                                   onclick="XInput()">
+                        </td>
+                        <td>
+                            <label for="checkbox8" class="checkboxLabel">3</label>
+                            <input type="checkbox" class="Xcheckbox" id="checkbox8" name="x8" value="3"
+                                   onclick="XInput()">
+                        </td>
+                        <td>
+                            <label for="checkbox9" class="checkboxLabel">4</label>
+                            <input type="checkbox" class="Xcheckbox" id="checkbox9" name="x9" value="4"
+                                   onclick="XInput()">
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td colspan="1" class="askPart" align="center">
+                <div>
+                    <label id="YMessage" class="textLabel" style="visibility: hidden">something</label>
+                </div>
+                <table class="YCoordinateTable">
+                    <tr>
+                        <th>
+                            <label class="textLabel">Coordinate Y</label>
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="text" style="color: #ff4438; width: auto" name="y" id="Ycoordinate"
+                                   oninput="YInput()"
+                                   maxlength="10" width="80%" value="2">
+                        </td>
+                    </tr>
+                </table>
+                <div>
+                    <label id="RMessage" style="visibility: hidden" class="textLabel">something</label>
+                </div>
+                <table class="RadTable">
+                    <tr>
+                        <th colspan="5">
+                            <label class="textLabel">R:</label>
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="checkbox1r" class="checkboxLabel">1</label>
+                            <input type="checkbox" class="Rcheckbox" id="checkbox1r" name="r1" value="1" checked
+                                   onclick="RInput()">
+                        </td>
+                        <td>
+                            <label for="checkbox2r" class="checkboxLabel">1.5</label>
+                            <input type="checkbox" class="Rcheckbox" id="checkbox2r" name="r2" value="1.5"
+                                   onclick="RInput()">
+                        </td>
+                        <td>
+                            <label for="checkbox3r" class="checkboxLabel">2</label>
+                            <input type="checkbox" class="Rcheckbox" id="checkbox3r" name="r3" value="2"
+                                   onclick="RInput()">
+                        </td>
+                        <td>
+                            <label for="checkbox4r" class="checkboxLabel">2.5</label>
+                            <input type="checkbox" class="Rcheckbox" id="checkbox4r" name="r4" value="2.5"
+                                   onclick="RInput()">
+                        </td>
+                        <td>
+                            <label for="checkbox5r" class="checkboxLabel">3</label>
+                            <input type="checkbox" class="Rcheckbox" id="checkbox5r" name="r5" value="3"
+                                   onclick="RInput()">
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr style="border: 2px solid black">
+            <td colspan="2">
+                <table id="formButtons">
+                    <tr>
+                        <td align="left">
+                            <input type="submit" id="Submit">
+                        </td>
+                        <td align="center">
+                            <input type="checkbox" name="c">Очистить таблицу?
+                        </td>
+                        <td align="right">
+                            <input type="reset" id="Reset" onclick="myReset()">
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </form>
+</table>
+</body>
+</html>

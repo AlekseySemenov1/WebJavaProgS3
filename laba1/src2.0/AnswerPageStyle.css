@@ -1,0 +1,17 @@
+.answerTable{
+    background-color: cyan;
+    width: 70%;
+    border-spacing: 0;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.answerTable td{
+    border: 2px solid black;
+    text-align: center;
+    width: 16%;
+}
+
+body{
+    background-color: indigo;
+}
