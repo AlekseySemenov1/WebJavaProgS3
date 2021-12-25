@@ -43,4 +43,12 @@ public class AreaCheckServlet extends HttpServlet {
         else
             return "<tr class='answerRow'><td>" + x + "</td><td>" + y + "</td><td>" + r + "</td><td class='result'>Miss</td></tr>";
     }
+    
+    private void savePoints(float x, float y, float r, boolean result, HttpServletRequest rec) {
+        LinkedList<Point> pointList = new LinkedList<>();
+        if (rec.getSession().getAttribute("pointList") != null)
+            pointList = (LinkedList<Point>) rec.getSession().getAttribute("pointList");
+        pointList.add(new Point(x, y, r, result));
+        rec.getSession().setAttribute("pointList", pointList);
+    }
 }
